@@ -4,7 +4,7 @@ function Sidebar({ notes,create,setCurrentActiveNoteId,handleToDelete,currentAct
 
     const renderNotesList = notes.map((note) =>
         <li onClick={()=> setCurrentActiveNoteId(note.id)} className={`flex items-center gap-10 text-xl w-full py-3 px-4 cursor-pointer ${note.id === currentActiveNoteId ? "active-note" : ""}`} key={note.id}><span>{note.body.split("\n")[0]}</span>
-        <button onClick={() => handleToDelete(note.id)}><FaTrash /></button>
+        <button className="trash" onClick={(e) => {e.stopPropagation(); handleToDelete(note.id);}}><FaTrash /></button>
         </li>
     )
 

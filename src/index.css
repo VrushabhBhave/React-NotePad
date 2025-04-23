@@ -21,3 +21,12 @@
     background-color: #3c91e6;
     color: white;
 }
+
+.active-note .trash:hover{
+    color: black;
+}
+
+.editor{
+    width: 100%;
+    height: 100vh;
+}
