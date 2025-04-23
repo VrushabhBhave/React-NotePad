@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+#root{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.gutter{
+    background-color: #eeeeee;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==);
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.split{
+    display: flex;
+}
+
+.active-note{
+    background-color: #3c91e6;
+    color: white;
+}
